@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
@@ -28,7 +27,7 @@ public class MovieAdapter extends ArrayAdapter<Movie> {
                     R.layout.movie_item, parent, false);
         }
 
-        ImageView iconView = (ImageView) convertView.findViewById(R.id.flavor_image);
+        ImageView iconView = (ImageView) convertView.findViewById(R.id.movie_image);
 
         final String FORECAST_BASE_URL = "http://image.tmdb.org/t/p/";
         String imageSize = "w185";
